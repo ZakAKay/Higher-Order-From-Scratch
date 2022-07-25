@@ -58,7 +58,7 @@ console.log(changedArray2)
 //.reduce() - function that takes an array of food orders with their amounts and returns the total amount of all the food orders.
 //==============================================================================
 //EXAMPLE OF .REDUCE() BELOW
-const array1 = [1, 2, 3, 4];
+const array1 = [1.00, 2.00, 3.00, 4.00];
 
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
@@ -72,16 +72,15 @@ console.log(sumWithInitial);
 //=========================================================================================
 //MY VERSION OF .REDUCE()
 //==========================================================================================
-const array = [8, 12, 24, 10]
+const foodArray = [77.00, 53.00, 21.00, 10.05]
 
-// 0 + 1 + 2 + 3 + 4
-const initialValue = 0;
-const sumWithInitial = array.reduce(
-  (previousValue, currentValue) => previousValue + currentValue, initialValue
+const startingValue = 0;
+const sumWithInitial = foodArray.reduce(
+  (previousValue, currentValue) => previousValue + currentValue, startingValue
   );
 
 console.log(sumWithInitial)
-//answer: 54
+//answer: 161.05
 //=========================================================================================
 //MY SECOND VERSION OF .REDUCE()
 //==========================================================================================
